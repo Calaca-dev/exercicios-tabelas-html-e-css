@@ -1,0 +1,161 @@
+/* configuração da html */
+@charset "UTF-8";
+ * {
+   margin: 0;
+   padding: 0;
+   outline: 0;
+   box-sizing: border-box;
+ }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+body{
+ background-image: linear-gradient( #434343,#000000);
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ width: 100%;
+
+}
+
+/* configuração da html */
+
+/* configuração da tabela */
+caption {
+  color: white;
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+table {
+  font-family: Roboto Mono;
+  margin: 0;
+  width: 60%;
+  border-collapse: collapse;
+  font-size: 12px;
+  height: 30vh;
+  
+}
+
+.table-fudao,td {
+    margin: 0;
+}
+
+.table-fudao{
+    position:relative;
+    margin: auto;
+    top: 10vh; 
+}
+
+
+/* configuração da tabela */
+
+/* formatação do cabeçalho da tabela */
+.header-table {
+  color: white;
+  background-color: black;
+  font-size: 15px;
+  width: 100%;
+  height: 50px;
+}
+/* formatação do cabeçalho da tabela */
+
+
+/* formatação das lista na tabela */
+.list-dep-01,.list-dep-02,.list-dep-03,.list-dep-04{
+  list-style: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+/* formatação das lista na tabela */
+
+/* configuração do conteúdo da tabela */
+tr {
+  text-align: center;
+  line-height: 1.7;
+  vertical-align: middle;
+
+}
+/* configuração do conteúdo da tabela */
+
+/* Formatação das células das extremidades do cabeçalho da tabela */
+.header-column-01 {
+border-radius: 20px 0px 0px 0px;
+}
+.header-column-03 {
+border-radius: 0px 0px 0px 0px;
+}
+.header-column-04 {
+border-radius: 0px 0px 0px 0px;  
+}
+.header-column-05 {
+border-radius: 0px 0px 0px 0px;
+}
+.header-column-06 {
+border-radius: 0px 20px 0px 0px;  
+}
+/* Formatação das células das extremidades do cabeçalho da tabela */
+
+.header-table:nth-child(1n) {
+  background-color: rgb(14, 16, 17); 
+  border-radius: 200px; 
+ 
+}
+
+
+.header-line:nth-child(1n) {
+  background-color: rgb(14, 16, 17); 
+  border-radius: 200px; 
+ 
+}
+tr:nth-child(odd) {
+	background-color:#ffffff;
+	}
+tr:nth-child(even) {
+	background-color:#e9e3e3;
+	}
+  /* responsivdade com media queries */
+@media(max-width:500px){
+  .table-fudao thead{
+    display:none;
+  }
+  .table-fudao, .table-fudao tbody, .table-fudao tr, .table-fudao td {
+    display:block;
+    width: 100%;
+  }
+  .table-fudao tr {
+    margin-bottom:15px;
+  }
+ .table-fudao td {
+   text-align: right;
+   padding-left:50%;
+   position: relative;
+ }
+ .table-fudao td::before {
+   content: attr(data-label);
+   position: absolute;
+   left:0;
+   width:50%;
+   padding-left: 15px;
+   font-size: 12px;
+   font-weight: bold;
+   text-align: center;    
+   
+ }
+ td {
+   border-bottom: 1px solid black;
+ }
+
+ tr {
+   border: 1px solid blueviolet;
+ }
+
+ 
+caption {
+  display: none;
+}
+
+}
+
+  /* responsivdade com media queries */

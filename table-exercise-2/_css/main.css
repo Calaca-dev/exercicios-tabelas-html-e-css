@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url("../_img/background-image.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+body, table, td  {
+    font-family:Helvetica, sans-serif ;
+    font-size:18px;
+    font-weight: 500;
+    margin-top:25px;
+    margin-bottom: 25px;
+}
+
+table{
+ display: table;
+ text-align:center;
+ border-spacing: 0px;
+ width: 800px;
+ height: 800px;
+ position: relative;
+ left: 50%;
+ transform: translate(-50%);
+}
+ 
+
+tr,td {
+    padding: 10px;
+   text-align: left;
+   position: relative;
+   
+}
+
+td {
+    display: table-cell;
+    vertical-align: middle;
+    position: relative;
+    
+}
+
+#cell-border-01 {
+    border-radius: 0 0 0 20px;
+}
+#cell-border-02 {
+    border-radius: 0 0 20px 0;
+}
+
+.design-table:nth-child(1n) {
+   background-color: rgb(14, 16, 17); 
+   border-radius: 200px; 
+  
+}
+
+
+th {
+    color: white;
+    padding: 15px;
+
+}
+
+#head-border-cell-01 {
+    border-radius: 20px 0 0 0 ;
+}
+
+#head-border-cell-02 {
+    border-radius: 0 20px 0 0;
+} 
+
+tr:nth-child(odd) {
+	background-color:#ffffff;
+	}
+tr:nth-child(even) {
+	background-color:#e9e3e3;
+	}
+
+ 
+
+.img-size {
+    width: 40px;
+    height:50px;
+    box-shadow: 0px 3px 8px black;
+    position: relative;
+    bottom: -25px;
+    left: 30px;
+}
+
+.shit-img {
+    width: 50px;
+    height:50px ;
+    position: relative;
+    left: 60px;
+}
+
+.emoji-wtf {
+    height: 50px;
+    position: relative;
+    left: 30px;
+}
+
+.informacoes-gastos {
+    width:500px;
+
+}
+.informacoes-gasto-grafico {
+    width: 300px;
+    height: 300px;
+}
